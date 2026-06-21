@@ -26,6 +26,8 @@
     --spacing: 0.25rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
@@ -239,14 +241,23 @@
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
-  .w-35 {
-    width: calc(var(--spacing) * 35);
+  .w-0 {
+    width: 0;
   }
-  .w-42 {
-    width: calc(var(--spacing) * 42);
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
+  }
+  .w-65 {
+    width: calc(var(--spacing) * 65);
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
@@ -357,9 +368,6 @@
   .object-cover {
     object-fit: cover;
   }
-  .p-1 {
-    padding: var(--spacing);
-  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -456,6 +464,10 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
   }
   .text-\[14px\] {
     font-size: 14px;
